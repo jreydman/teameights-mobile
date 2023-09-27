@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:teameights_mobile/shared/assets/variables.dart';
+import 'package:teameights_mobile/shared/data/variables.dart';
 
 class T8sLogotype extends StatelessWidget {
   const T8sLogotype({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:teameights_mobile/shared/assets/variables.dart';
+import 'package:teameights_mobile/shared/data/variables.dart';
 
 class T8sNavigationCard extends StatelessWidget {
 
@@ -10,7 +10,6 @@ class T8sNavigationCard extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) => Card(
-      margin: const EdgeInsets.only(left: 10.0, right: 10.0, bottom: 5.0),
       child: InkWell(
         borderRadius: BorderRadius.circular(10.0),
         splashColor: t8sAppVariables.accentHoverColor,

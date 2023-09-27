@@ -13,6 +13,6 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(title: const Text('T8S')),
     drawer: const T8sNavbar(),
-    body: Container(alignment: Alignment.center, child: Text('home page'))
+    body: Container(alignment: Alignment.center, child: const Text('home page'))
   );
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:teameights_mobile/home/home.page.dart';
+import 'package:teameights_mobile/shared/pages/home/home.page.dart';
 
 class Signin extends StatelessWidget {
   @override

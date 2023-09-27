@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:teameights_mobile/shared/pages/home/home.page.dart';
 
 class Signin extends StatelessWidget {
+  const Signin({super.key});
+
   @override
   Widget build(BuildContext context) => SingleChildScrollView(child: Column(children: <Widget>[
     const Padding(padding: EdgeInsets.symmetric(horizontal: 15), child: 

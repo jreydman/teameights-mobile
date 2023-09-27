@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:teameights_mobile/shared/assets/variables.dart';
 
 class T8sLogotype extends StatelessWidget {

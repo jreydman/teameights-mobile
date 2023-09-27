@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:teameights_mobile/shared/assets/variables.dart';
 import 'package:teameights_mobile/shared/navbar/navbarProfileCard.component.dart';
 import 'package:teameights_mobile/shared/navbar/navigationCard.component.dart';

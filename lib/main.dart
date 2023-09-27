@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: t8sThemes.v1Appbar,
     ),
     home: Scaffold(
-      appBar: AppBar(title: Text('T8S')),
+      appBar: AppBar(title: const Text('T8S')),
       drawer: const T8sNavbar(),
       body: const AuthorizationPage(),
     ),

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # teameights_mobile
 
 mobile addon for |teameights.com| app

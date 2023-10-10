@@ -7,16 +7,30 @@ class Signin extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Container(
-    
+    padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
     alignment: Alignment.center,
     child: SafeArea(child: Listener(
       onPointerDown: (PointerDownEvent event) => FocusManager.instance.primaryFocus?.unfocus(),
-  child: Form(child: SingleChildScrollView(child: Column(children: [
-      const Text('Signin'),
-      const SizedBox(height: 12.0),
-      T8sTextFormFiled(labelText: 'Username', icon: Icon(PhosphorIcons.bold.user), keyboardType: TextInputType.name),
-      const SizedBox(height: 12.0),
-      T8sTextFormFiled(labelText: 'Password', icon: Icon(PhosphorIcons.bold.password), keyboardType: TextInputType.text)
-    ])))
+      child: Form(child: SingleChildScrollView(child: Column(children: [
+        Text('Signin'),
+        const SizedBox(height: 12.0),
+        Row(mainAxisAlignment : MainAxisAlignment.spaceEvenly, children: [
+          ElevatedButton.icon(onPressed: (){}, icon: Icon(PhosphorIcons.bold.googleChromeLogo), label: const Text('Google')),
+          ElevatedButton.icon(onPressed: (){}, icon: Icon(PhosphorIcons.bold.githubLogo), label: const Text('Github')),
+        ]),
+        const SizedBox(height: 12.0),
+        T8sTextFormFiled(labelText: 'Username', icon: Icon(PhosphorIcons.bold.user), keyboardType: TextInputType.name),
+        const SizedBox(height: 12.0),
+        T8sTextFormFiled(labelText: 'Password', icon: Icon(PhosphorIcons.bold.password), keyboardType: TextInputType.text),
+        const SizedBox(height: 12.0),
+        ElevatedButton(
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(content: Text('Processing authorize user')),
+            );
+          },
+          child: const Text('Submit'),
+        )
+      ])))
   ))); 
 }

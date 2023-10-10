@@ -23,7 +23,7 @@ class T8sNavigationCard extends StatelessWidget {
             trailing: trailing!=null ? 
                 Container(
                   decoration: const BoxDecoration(shape: BoxShape.circle, color: t8sAppVariables.accentColor),
-                  child: Padding(padding: const EdgeInsets.all(5), child: Text(trailing!)),
+                  child: Padding(padding: const EdgeInsets.all(5.0), child: Text(trailing!)),
                 ) : null
         ),
       )

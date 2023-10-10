@@ -10,7 +10,8 @@ import 'package:talker_flutter/talker_flutter.dart';
 import 'package:teameights_mobile/shared/data/variables.dart';
 import 'package:teameights_mobile/shared/screens/authorization/authorization.screen.dart';
 
-void main() {
+Future<void> main() async {
+  
   final talker = TalkerFlutter.init();
   GetIt.I.registerSingleton(talker);
   GetIt.I<Talker>().debug("Talker started...");

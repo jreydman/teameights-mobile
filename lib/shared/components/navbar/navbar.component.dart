@@ -15,16 +15,16 @@ class T8sNavbar extends StatefulWidget {
 
 class _T8sNavbarState extends State<T8sNavbar> {
   
-  static List<Message> messagePool_test = [
+  static var messagePoolTest = [
     Message(from: 'someMail@gmail.com', data: 'hello there!')
   ];
 
-  static List<TNotification> notificationPool_test = [
+  static var notificationPoolTest = <TNotification>[
     TNotification(title: 'open up it now!', data: 'yeah, bite haha')
   ];
   
-  User _userData = User(username: 'username', email: 'email', messagePool: messagePool_test, notificationPool: notificationPool_test );
-  
+  final User? _userData = User(username: 'username', email: 'email', messagePool: messagePoolTest, notificationPool: notificationPoolTest );
+  // final User? _userData = null;
   void setUser() {
     setState(() {
      
@@ -57,12 +57,12 @@ class _T8sNavbarState extends State<T8sNavbar> {
             T8sNavigationCard(title: const Text('Projects'), leading: Icon(PhosphorIcons.regular.file)),
             T8sNavigationCard(title: const Text('Profile'), leading: Icon(PhosphorIcons.regular.user)),
           ]),
-          if (_userData != null) Column(children: [
+          Column(children: [
             T8sNavigationCard(title: const Text('Notifications'), leading: Icon(PhosphorIcons.regular.bell), trailing: '5',),
             T8sNavigationCard(title: const Text('Settings'), leading: Icon(PhosphorIcons.regular.gear)),
           ]),
           Padding(
-              padding: EdgeInsets.only(bottom: 30.0),
+              padding: const EdgeInsets.only(bottom: 30.0),
               child: Column(children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
